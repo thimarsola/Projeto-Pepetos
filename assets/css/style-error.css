@@ -1024,15 +1024,15 @@ body {
 }
 
 .py-s {
-  padding: calc(var(--fs-100) * 17) 0;
+  padding: calc(var(--fs-100) * 15) 0;
 }
 
 .pt-s {
-  padding-top: calc(var(--fs-100) * 17);
+  padding-top: calc(var(--fs-100) * 15);
 }
 
 .pb-s {
-  padding-bottom: calc(var(--fs-100) * 17);
+  padding-bottom: calc(var(--fs-100) * 15);
 }
 
 .radius {
@@ -1454,7 +1454,7 @@ body {
   }
   .header__content__navbar ul {
     flex-flow: column;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .header__content__toggle {
     display: flex !important;
@@ -1464,7 +1464,7 @@ body {
   .header__content__navbar {
     right: var(--gap);
     width: calc(100vw - var(--gap) * 2);
-    height: 55vh;
+    height: 50vh;
   }
 }
 

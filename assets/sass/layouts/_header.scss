@@ -159,7 +159,7 @@
 
         ul{
           flex-flow: column;
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
       }
 
@@ -175,7 +175,7 @@
       &__navbar{
         right: var(--gap);
         width: calc(100vw - (var(--gap) * 2));
-        height: 55vh;
+        height: 50vh;
       }
     }
   }

@@ -1116,15 +1116,15 @@ body {
 }
 
 .py-s {
-  padding: calc(var(--fs-100) * 17) 0;
+  padding: calc(var(--fs-100) * 15) 0;
 }
 
 .pt-s {
-  padding-top: calc(var(--fs-100) * 17);
+  padding-top: calc(var(--fs-100) * 15);
 }
 
 .pb-s {
-  padding-bottom: calc(var(--fs-100) * 17);
+  padding-bottom: calc(var(--fs-100) * 15);
 }
 
 .radius {
@@ -1546,7 +1546,7 @@ body {
   }
   .header__content__navbar ul {
     flex-flow: column;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .header__content__toggle {
     display: flex !important;
@@ -1556,7 +1556,7 @@ body {
   .header__content__navbar {
     right: var(--gap);
     width: calc(100vw - var(--gap) * 2);
-    height: 55vh;
+    height: 50vh;
   }
 }
 
@@ -2185,6 +2185,95 @@ img.mfp-img {
   .hero__content p {
     font-size: var(--fs-200);
     text-align: justify;
+  }
+}
+
+.about {
+  position: relative;
+}
+.about::before {
+  position: absolute;
+  top: -14.9rem;
+  right: 0;
+  width: 18.8rem;
+  height: 29.8rem;
+  content: "";
+  background-image: url("../svg/vetor-quadrado-sobre.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.about::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15rem;
+  height: 15rem;
+  content: "";
+  background-image: url("../svg/vetor-retangulo-sobre.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.about__row {
+  align-items: center;
+}
+.about__row__image {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  padding-right: var(--fs-700);
+  padding-bottom: var(--fs-400);
+  z-index: 2;
+}
+.about__row__image::before {
+  position: absolute;
+  top: 11rem;
+  right: 0;
+  width: 26.7rem;
+  height: 26.7rem;
+  content: "";
+  background: var(--clr-primary-500);
+  border-radius: var(--fs-200);
+  z-index: -1;
+}
+.about__row__image::after {
+  position: absolute;
+  bottom: 0;
+  right: 3.2rem;
+  width: 26.7rem;
+  height: 26.7rem;
+  content: "";
+  background: var(--clr-dark-blue-500);
+  border-radius: var(--fs-200);
+  z-index: -2;
+}
+@media only screen and (max-width: 768px) {
+  .about__row {
+    grid-template-columns: 1fr;
+    gap: calc(var(--gap) * 4);
+  }
+  .about__row__image {
+    width: 100%;
+    height: 40rem;
+    padding: 0;
+  }
+  .about__row__image::before {
+    top: -3rem;
+    right: -3rem;
+  }
+  .about__row__image::after {
+    right: initial;
+    left: -3rem;
+    bottom: -3rem;
+  }
+  .about__row__image picture {
+    width: 100%;
+    height: 100%;
+  }
+  .about__row__image picture img {
+    object-position: center 25%;
   }
 }
 
