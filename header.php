@@ -100,7 +100,7 @@
 <!-- end of header -->
 
 <!-- whatsapp -->
-<?php //get_template_part('template-parts/header/header', 'whatsapp'); ?>
+<?php get_template_part('template-parts/header/header', 'whatsapp'); ?>
 <!-- end of whatsapp -->
 
 <!-- main -->

@@ -1470,23 +1470,24 @@ body {
 
 .whatsapp {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
+  right: 1rem;
+  bottom: 1rem;
   z-index: 100;
 }
 .whatsapp a {
   margin: 0;
-  padding: 0;
-  width: var(--fs-900);
-  height: var(--fs-900);
+  padding-bottom: 1.2rem;
+  width: 12rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: var(--fs-500);
+  align-items: flex-end;
+  font-size: var(--fs-600);
   color: white;
   line-height: 1;
-  border-radius: 50%;
-  background: var(--clr-whatsapp-500);
+  background-image: url("../svg/paw.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: transform 300ms ease-in-out;
 }
