@@ -1,1 +1,94 @@
 @use "../../abstracts" as *;
+
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background:{
+    image: url('../images/background-hero.png');
+    size: cover;
+    position: right top;
+  }
+
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22.4rem;
+    height: 9rem;
+    content: '';
+    background:{
+      image: url("../svg/vetor-triangulo-hero.svg");
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+
+  &::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15rem;
+    height: 30rem;
+    content: '';
+    background:{
+      image: url("../svg/vetor-circulo-hero.svg");
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+
+  &__content{
+    position: relative;
+    max-width: 63.5rem;
+    width: 100%;
+    z-index: 2;
+
+    &__header{
+      max-width: 54rem;
+      width: 100%;
+    }
+
+    p{
+      font-size: 1.8rem;
+    }
+  }
+
+  //breakpoint 1112px
+  @include bp(1112px){
+    background-image: url("../images/background-hero-medium.png");
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    background-image: url("../images/background-hero-tablet.png");
+
+    &__content{
+      &__header{
+        h2{
+          font-size: var(--fs-900);
+        }
+      }
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    background-image: url("../images/background-hero-tablet.png");
+
+    &__content{
+      &__header{
+        h2{
+          font-size: 6.3rem;
+        }
+      }
+
+      p{
+        font-size: var(--fs-200);
+        text-align: justify;
+      }
+    }
+  }
+}

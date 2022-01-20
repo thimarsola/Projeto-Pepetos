@@ -2,8 +2,8 @@
   --font-base: 50%;
   --gap: 1.5rem;
   --regular: "Montserrat Regular", sans-serif;
-  --medium: "Montserrat Medium", sans-serif;
   --bold: "Montserrat Bold", sans-serif;
+  --nunito: "Nunito Extra-Bold", sans-serif;
   --clr-primary-500: #05D1C7;
   --clr-neutral-500: #434343;
   --clr-white-500: #fff;
@@ -209,7 +209,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--bold) !important;
+  font-family: var(--nunito) !important;
   font-size: inherit;
   line-height: 1.1;
   color: var(--clr-dark-blue-500);
@@ -1077,38 +1077,13 @@ body {
   font-size: 12px;
 }
 
-.title {
-  margin-bottom: var(--fs-800);
-  text-align: center;
-}
-.title p {
-  margin-bottom: var(--fs-100);
-  font-family: var(--bold) !important;
-  color: var(--clr-primary-500);
-  text-transform: uppercase;
-}
-.title__divider {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.title__divider span {
-  display: block;
+.line {
+  display: inline-block;
+  margin-top: var(--fs-200);
+  line-height: 1 !important;
+  width: 6rem;
+  height: 5px;
   background: var(--clr-primary-500);
-}
-.title__divider span:nth-child(1) {
-  width: 40px;
-  height: 4px;
-}
-.title__divider span:nth-child(2) {
-  width: 5px;
-  height: 4px;
-}
-@media only screen and (max-width: 576px) {
-  .title h2 {
-    font-size: var(--fs-600);
-  }
 }
 
 .btn {
@@ -1121,6 +1096,7 @@ body {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
   line-height: 1.1 !important;
+  border-radius: 3rem;
   font-family: var(--bold) !important;
   font-size: var(--fs-200);
   text-transform: uppercase;
@@ -1137,7 +1113,7 @@ body {
 
 .btn-primary-500 {
   background-color: #05D1C7;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-primary-500:hover {
@@ -1148,7 +1124,7 @@ body {
 
 .btn-neutral-500 {
   background-color: #434343;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-neutral-500:hover {
@@ -1170,7 +1146,7 @@ body {
 
 .btn-whatsapp-500 {
   background-color: #2CD366;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-whatsapp-500:hover {
@@ -1181,7 +1157,7 @@ body {
 
 .btn-light-blue-500 {
   background-color: #BEEAF8;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-light-blue-500:hover {
@@ -1192,7 +1168,7 @@ body {
 
 .btn-dark-blue-500 {
   background-color: #000438;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-dark-blue-500:hover {
@@ -1203,7 +1179,7 @@ body {
 
 .btn-green-500 {
   background-color: #77fd86;
-  color: var(--clr-blue-500);
+  color: var(--clr-dark-blue-500);
   transition: all 300ms ease-in-out;
 }
 .btn-green-500:hover {
