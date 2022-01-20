@@ -17,6 +17,10 @@
   display: inline-block;
 }
 
+.d-block{
+  display: block;
+}
+
 .d-flex{
   width: 100%;
   display: flex;
@@ -49,4 +53,8 @@
 
 .f-row{
   flex-direction: row;
+}
+
+.nowrap{
+  flex-wrap: nowrap;
 }

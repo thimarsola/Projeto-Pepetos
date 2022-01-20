@@ -27,24 +27,9 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-calendar {
+.icon-arrow-back {
   &:before {
-    content: $icon-calendar;
-  }
-}
-.icon-file {
-  &:before {
-    content: $icon-file;
-  }
-}
-.icon-anies-e-pinos-elasticos {
-  &:before {
-    content: $icon-anies-e-pinos-elasticos;
-  }
-}
-.icon-arrow-downward {
-  &:before {
-    content: $icon-arrow-downward;
+    content: $icon-arrow-back;
   }
 }
 .icon-arrow-forward {
@@ -52,39 +37,9 @@ i {
     content: $icon-arrow-forward;
   }
 }
-.icon-arruelas {
-  &:before {
-    content: $icon-arruelas;
-  }
-}
-.icon-barramento-blindado {
-  &:before {
-    content: $icon-barramento-blindado;
-  }
-}
-.icon-check {
-  &:before {
-    content: $icon-check;
-  }
-}
 .icon-clock {
   &:before {
     content: $icon-clock;
-  }
-}
-.icon-diamond {
-  &:before {
-    content: $icon-diamond;
-  }
-}
-.icon-estamparia {
-  &:before {
-    content: $icon-estamparia;
-  }
-}
-.icon-eye {
-  &:before {
-    content: $icon-eye;
   }
 }
 .icon-facebook {
@@ -92,14 +47,9 @@ i {
     content: $icon-facebook;
   }
 }
-.icon-home {
+.icon-html5 {
   &:before {
-    content: $icon-home;
-  }
-}
-.icon-html {
-  &:before {
-    content: $icon-html;
+    content: $icon-html5;
   }
 }
 .icon-instagram {
@@ -107,39 +57,14 @@ i {
     content: $icon-instagram;
   }
 }
-.icon-linha-de-fixadores {
+.icon-location {
   &:before {
-    content: $icon-linha-de-fixadores;
+    content: $icon-location;
   }
 }
-.icon-linkedin {
+.icon-paw {
   &:before {
-    content: $icon-linkedin;
-  }
-}
-.icon-mail {
-  &:before {
-    content: $icon-mail;
-  }
-}
-.icon-map {
-  &:before {
-    content: $icon-map;
-  }
-}
-.icon-marker {
-  &:before {
-    content: $icon-marker;
-  }
-}
-.icon-metal-x-borracha {
-  &:before {
-    content: $icon-metal-x-borracha;
-  }
-}
-.icon-molas-pratos {
-  &:before {
-    content: $icon-molas-pratos;
+    content: $icon-paw;
   }
 }
 .icon-phone {
@@ -147,49 +72,24 @@ i {
     content: $icon-phone;
   }
 }
-.icon-pino-elastico {
+.icon-small-paw {
   &:before {
-    content: $icon-pino-elastico;
+    content: $icon-small-paw;
   }
 }
-.icon-plus {
+.icon-telephone {
   &:before {
-    content: $icon-plus;
+    content: $icon-telephone;
   }
 }
-.icon-send {
+.icon-testimonial {
   &:before {
-    content: $icon-send;
-  }
-}
-.icon-spinner {
-  &:before {
-    content: $icon-spinner;
-  }
-}
-.icon-target {
-  &:before {
-    content: $icon-target;
-  }
-}
-.icon-twitter {
-  &:before {
-    content: $icon-twitter;
-  }
-}
-.icon-usinagem {
-  &:before {
-    content: $icon-usinagem;
+    content: $icon-testimonial;
   }
 }
 .icon-whatsapp {
   &:before {
     content: $icon-whatsapp;
-  }
-}
-.icon-youtube {
-  &:before {
-    content: $icon-youtube;
   }
 }
 

@@ -49,4 +49,8 @@
   margin: 0 auto;
   padding: 0 calc(var(--gap) * 2);
   max-width: 163rem;
+
+  @include mq(sm){
+    padding: 0 var(--gap);
+  }
 }
