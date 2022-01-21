@@ -2277,4 +2277,45 @@ img.mfp-img {
   }
 }
 
+.structure {
+  position: relative;
+  background: linear-gradient(#f6f6f6, #fff);
+}
+.structure::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24rem;
+  height: 24rem;
+  content: "";
+  background-image: url("../svg/vetor-estrutura.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.structure__row {
+  position: relative;
+  z-index: 1;
+}
+.structure__row__content__body ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.structure__row__images {
+  columns: 2;
+  gap: calc(var(--gap) * 2);
+}
+.structure__row__images picture {
+  display: block;
+  margin-bottom: calc(var(--gap) * 2);
+  break-inside: avoid;
+}
+@media only screen and (max-width: 768px) {
+  .structure__row {
+    grid-template-columns: 1fr;
+  }
+  .structure__row__images {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

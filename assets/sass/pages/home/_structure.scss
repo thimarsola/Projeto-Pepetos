@@ -1,0 +1,56 @@
+@use "../../abstracts" as *;
+
+.structure{
+  position: relative;
+  background: linear-gradient(#f6f6f6, #fff);
+
+  &::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24rem;
+    height: 24rem;
+    content: '';
+    background:{
+      image: url('../svg/vetor-estrutura.svg');
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+
+  &__row{
+    position: relative;
+    z-index: 1;
+
+    &__content{
+      &__body{
+        ul{
+          list-style: disc;
+          list-style-position: inside;
+        }
+      }
+    }
+
+    &__images{
+      columns: 2;
+      gap: calc(var(--gap) * 2);
+
+      picture{
+        display: block;
+        margin-bottom: calc(var(--gap) * 2);
+        break-inside: avoid;
+      }
+    }
+  }
+
+  //breakpoint tablet
+  @include mq(md){
+    &__row{
+      grid-template-columns: 1fr;
+
+      &__images{
+        display: none;
+      }
+    }
+  }
+}
