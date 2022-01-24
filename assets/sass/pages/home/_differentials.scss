@@ -1,0 +1,136 @@
+@use "../../abstracts" as *;
+
+.differentials{
+  padding-bottom: var(--fs-1000);
+
+  &__header{
+    &__content{
+      margin-left: auto;
+      max-width: 60rem;
+      width: 100%;
+    }
+  }
+
+  &__content{
+    margin-top: -23rem;
+    max-width: 132.5rem;
+    width: 100%;
+
+    &__row{
+      display: flex !important;
+      align-items: flex-end;
+      gap: calc(var(--gap) * 2);
+      width: 100%;
+
+      &__card{
+        max-width: 30rem;
+        width: 100%;
+        direction: ltr;
+
+        &__image{
+          width: 100%;
+          height: 30rem;
+        }
+
+        &__body{
+          padding: calc(var(--gap) * 2) var(--gap);
+          background: #f8f8f8;
+
+          &__header{
+            h3{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //breakpoint 1440px
+  @include bp(1440px){
+    &__content{
+      max-width: 105rem;
+    }
+  }
+
+  //breakpoint 1366px
+  @include bp(1366px){
+    &__content{
+      margin-top: -16rem;
+    }
+  }
+
+  //breakpoint 1112px
+  @include bp(1112px){
+    &__content{
+      margin-top: -10rem;
+    }
+  }
+
+  //breakpoint 1024px
+  @include bp(1024px){
+    &__content{
+      padding-right: var(--gap);
+      margin-top: -10rem;
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    &__header{
+      padding-bottom: 24rem;
+
+      &__content{
+        text-align: center;
+      }
+    }
+
+    &__content{
+      margin-top: -20rem;
+      padding: 0 calc(var(--gap) * 2);
+      width: 100%;
+
+      &__row{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__card{
+          min-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.owl-dots{
+  display: none;
+}
+
+.owl-nav{
+  padding-bottom: 15rem;
+  order: -1;
+  display: flex;
+  gap: calc(var(--gap) * 2);
+
+  button{
+    width: var(--fs-700);
+    height: var(--fs-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-white-500) !important;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(#000, .15);
+
+    span{
+      font-size: 3rem !important;
+      line-height: 0 !important;
+    }
+  }
+
+  //breakpoint mobile
+  @include mq(sm){
+    padding-bottom: 0;
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "differentials": [
+    {
+      "image": "imagem-diferencial-01",
+      "description": "Equipe de adestramento na área de recreação o dia todo"
+    },
+    {
+      "image": "imagem-diferencial-02",
+      "description": "Ambiente monitorado por humanos e por câmeras 24hrs (transmissão interna)"
+    },
+    {
+      "image": "imagem-diferencial-03",
+      "description": "Veterinária responsável 24h de plantão para qualquer eventualidade."
+    },
+    {
+      "image": "imagem-diferencial-04",
+      "description": "Piscina como parte da recreação dos alunos da creche, sem qualquer valor adicional e com a monitoria de um profissional"
+    },
+    {
+      "image": "imagem-diferencial-05",
+      "description": "Envio de fotos e vídeos da recreação durante o dia além de relatório de atividades realizadas ao final da aula."
+    },
+    {
+      "image": "imagem-diferencial-06",
+      "description": "Alunos matriculados na creche tem 10% de desconto em pacotes de banho, hospedagem além de valores especiais para adestramento"
+    },
+    {
+      "image": "imagem-diferencial-07",
+      "description": "Programa completo de recreação levando em consideração as necessidades de cada cão, através de cronogramas mensais de atividades em que o cão explora seu lado social, sensorial, alimentar, cognitivo e físico."
+    }
+  ]
+}
