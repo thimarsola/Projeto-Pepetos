@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "title": "Creche (day care)",
+      "image": "imagem-creche",
+      "description": "Espaço de recreação criado para promover o bem estar e trazer mais qualidade de vida para os cães"
+    },
+    {
+      "title": "Hotel",
+      "image": "imagem-hotel",
+      "description": "Serviço de hospedagem de cães, soltos em áreas de recreação e com monitor 24 horas por dia"
+    },
+    {
+      "title": "Adestramento",
+      "image": "imagem-adestramento",
+      "description": "Treinamento disciplinar e comportamental através de conceitos positivos"
+    },
+    {
+      "title": "Banho & Tosa",
+      "image": "imagem-banho-e-tosa",
+      "description": "Espaço estético de embelezamento dos cães"
+    },
+    {
+      "title": "Táxi Dog",
+      "image": "imagem-taxi-dog",
+      "description": "Transporte exclusivo (leva e traz) para alunos da creche"
+    }
+  ]
+}

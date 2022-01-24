@@ -2668,4 +2668,51 @@ img.mfp-img {
   }
 }
 
+.services {
+  position: relative;
+}
+.services::before {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  width: 10rem;
+  height: 20rem;
+  content: "";
+  background-image: url("../svg/vertor-circulo-servicos.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.services__row__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.services__row__card__image {
+  width: 100%;
+  min-height: 32rem;
+  height: 100%;
+  z-index: 0;
+}
+.services__row__card__content {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% - var(--gap) * 4);
+  max-height: 18.5rem;
+  height: 100%;
+  margin: -9.25rem auto 0 auto;
+  padding: calc(var(--gap) * 2) var(--gap);
+  z-index: 1;
+}
+.services__row__card__content__body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .services__row {
+    gap: calc(var(--gap) * 4);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

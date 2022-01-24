@@ -16,4 +16,8 @@
 <?php get_template_part('template-parts/home/home', 'differentials'); ?>
 <!-- end of differentials -->
 
+<!-- services -->
+<?php get_template_part('template-parts/home/home', 'services'); ?>
+<!-- end of services -->
+
 <?php get_footer(); ?>
