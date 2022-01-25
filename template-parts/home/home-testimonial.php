@@ -1,4 +1,4 @@
-<section class="testimonial bg-light-gray-500 py-s">
+<section class="testimonial bg-light-gray-500 py-10">
 	<div class="container">
 
 		<!-- header -->

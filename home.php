@@ -24,4 +24,8 @@
 <?php get_template_part('template-parts/home/home', 'testimonial'); ?>
 <!-- end of testimonial -->
 
+<!-- veterinary -->
+<?php get_template_part('template-parts/home/home', 'veterinary'); ?>
+<!-- end of veterinary -->
+
 <?php get_footer(); ?>

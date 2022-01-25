@@ -2840,4 +2840,82 @@ img.mfp-img {
   }
 }
 
+.veterinary {
+  position: relative;
+}
+.veterinary::before {
+  position: absolute;
+  bottom: -10rem;
+  right: 0;
+  width: 10rem;
+  height: 20rem;
+  content: "";
+  background-image: url("../svg/vertor-circulo-servicos.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.veterinary__row {
+  align-items: center;
+}
+.veterinary__row__image {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  padding-left: var(--fs-700);
+  padding-bottom: var(--fs-400);
+  z-index: 2;
+}
+.veterinary__row__image::before {
+  position: absolute;
+  top: 11rem;
+  left: 0;
+  width: 26.7rem;
+  height: 26.7rem;
+  content: "";
+  background: var(--clr-primary-500);
+  border-radius: var(--fs-200);
+  z-index: -1;
+}
+.veterinary__row__image::after {
+  position: absolute;
+  bottom: 0;
+  left: 3.2rem;
+  width: 26.7rem;
+  height: 26.7rem;
+  content: "";
+  background: var(--clr-dark-blue-500);
+  border-radius: var(--fs-200);
+  z-index: -2;
+}
+@media only screen and (max-width: 768px) {
+  .veterinary__row {
+    grid-template-columns: 1fr;
+    gap: calc(var(--gap) * 4);
+  }
+  .veterinary__row__image {
+    width: 100%;
+    height: 40rem;
+    padding: 0;
+    order: -1;
+  }
+  .veterinary__row__image::before {
+    top: -3rem;
+    left: -3rem;
+  }
+  .veterinary__row__image::after {
+    left: initial;
+    right: -3rem;
+    bottom: -3rem;
+  }
+  .veterinary__row__image picture {
+    width: 100%;
+    height: 100%;
+  }
+  .veterinary__row__image picture img {
+    object-position: center 25%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
