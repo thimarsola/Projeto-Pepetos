@@ -12,7 +12,7 @@
          <?php for ($i = 1; $i < 9; $i++):  ?>
             <!-- image -->
             <a href="<?= image('imagem-galeria-' . str_pad($i, 2, 0, STR_PAD_LEFT) . '.jpg'); ?>" title="Conheça um pouco mais sobre a Pepetos" class="gallery__row__card radius-lg">
-               <?= picture('imagem-clinica-'. str_pad($i, 2, 0, STR_PAD_LEFT), 'Conheça um pouco mais sobre a Pepetos'); ?>
+               <?= picture('imagem-galeria-'. str_pad($i, 2, 0, STR_PAD_LEFT), 'Conheça um pouco mais sobre a Pepetos', 'img-fluid'); ?>
             </a>
             <!-- end of image -->
          <?php endfor; ?>

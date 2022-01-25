@@ -1535,9 +1535,6 @@ body {
   flex-wrap: wrap;
   gap: var(--fs-100);
 }
-.footer__copyright__row p {
-  text-align: center;
-}
 .footer__copyright__row ul {
   display: flex;
   gap: var(--gap);
@@ -1559,8 +1556,26 @@ body {
   margin-right: 4px;
 }
 @media only screen and (max-width: 576px) {
+  .footer__copyright__row {
+    justify-content: center;
+  }
+  .footer__copyright__row p {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .footer__copyright__row ul {
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 2.4rem;
+  }
   .footer__developer__row {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--fs-100);
+    text-align: center;
+  }
+  .footer__developer__row__agency {
+    flex-basis: 100%;
   }
 }
 

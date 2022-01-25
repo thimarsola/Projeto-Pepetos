@@ -5,16 +5,16 @@
       grid-template-columns: repeat(4, 1fr);
       
       &__card{
-         min-height: 20rem;
+         max-width: 100%;
+         min-height: 100%;
          width: 100%;
-         background: var(--clr-primary-500);
-         transform-origin: center;
-         transform: scale(1);
-         @include transition(transform);
+         height: 20rem;
+         outline: 5px solid transparent;
+         @include transition(all);
          
          &:hover{
-            transform: scale(.98);
-            @include transition(transform);
+            outline-color: var(--clr-light-blue-500);
+            @include transition(all);
          }
          
          &:nth-child(1){

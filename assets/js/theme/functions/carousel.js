@@ -1,23 +1,22 @@
 $(function () {
-    $(".differentials__content__row").owlCarousel({
-        rtl:true,
-        loop: true,
-        margin: 30,
-        nav:true,
-        responsive: {
-            0: {
-                items: 1,
-                autoHeight:true,
-            },
-            600: {
-                items: 3,
-                autoHeight:false,
-            },
-            1025: {
-                items: 4,
-            }
-        }
-    });
+   $(".differentials__content__row").owlCarousel({
+      rtl:true,
+      loop: true,
+      margin: 30,
+      nav:true,
+      autoHeight:false,
+      responsive: {
+         0: {
+            items: 1,
+         },
+         600: {
+            items: 3
+         },
+         1025: {
+            items: 4,
+         }
+      }
+   });
 
    $(".testimonial__content").owlCarousel({
       loop: true,

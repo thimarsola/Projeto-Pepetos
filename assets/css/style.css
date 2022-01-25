@@ -1627,9 +1627,6 @@ body {
   flex-wrap: wrap;
   gap: var(--fs-100);
 }
-.footer__copyright__row p {
-  text-align: center;
-}
 .footer__copyright__row ul {
   display: flex;
   gap: var(--gap);
@@ -1651,8 +1648,26 @@ body {
   margin-right: 4px;
 }
 @media only screen and (max-width: 576px) {
+  .footer__copyright__row {
+    justify-content: center;
+  }
+  .footer__copyright__row p {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .footer__copyright__row ul {
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 2.4rem;
+  }
   .footer__developer__row {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--fs-100);
+    text-align: center;
+  }
+  .footer__developer__row__agency {
+    flex-basis: 100%;
   }
 }
 
@@ -2405,7 +2420,10 @@ img.mfp-img {
 }
 @media only screen and (max-width: 576px) {
   .hero {
-    background-image: url("../images/background-hero-tablet.png");
+    background-image: url("../images/background-hero-mobile.png");
+  }
+  .hero::before {
+    display: none;
   }
   .hero__content__header h2 {
     font-size: 6.3rem;
@@ -2956,16 +2974,16 @@ img.mfp-img {
   grid-template-columns: repeat(4, 1fr);
 }
 .gallery__row__card {
-  min-height: 20rem;
+  max-width: 100%;
+  min-height: 100%;
   width: 100%;
-  background: var(--clr-primary-500);
-  transform-origin: center;
-  transform: scale(1);
-  transition: transform 300ms ease-in-out;
+  height: 20rem;
+  outline: 5px solid transparent;
+  transition: all 300ms ease-in-out;
 }
 .gallery__row__card:hover {
-  transform: scale(0.98);
-  transition: transform 300ms ease-in-out;
+  outline-color: var(--clr-light-blue-500);
+  transition: all 300ms ease-in-out;
 }
 .gallery__row__card:nth-child(1) {
   grid-column: 1/3;

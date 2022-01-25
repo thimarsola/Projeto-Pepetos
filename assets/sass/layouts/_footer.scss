@@ -9,10 +9,6 @@
          flex-wrap: wrap;
          gap: var(--fs-100);
          
-         p{
-            text-align: center;
-         }
-         
          ul{
             display: flex;
             gap: var(--gap);
@@ -48,9 +44,33 @@
 
    //breakpoint mobile
    @include mq(sm){
+      &__copyright{
+         &__row{
+            justify-content: center;
+
+            p{
+               flex-basis: 100%;
+               text-align: center;
+            }
+
+            ul{
+               flex-basis: 100%;
+               justify-content: center;
+               font-size: 2.4rem;
+            }
+         }
+      }
+      
       &__developer{
          &__row{
+            flex-wrap: wrap;
+            justify-content: center;
             gap: var(--fs-100);
+            text-align: center;
+            
+            &__agency{
+               flex-basis: 100%;
+            }
          }
       }
    }
