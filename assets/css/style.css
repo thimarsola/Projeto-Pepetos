@@ -1620,81 +1620,37 @@ body {
   line-height: inherit;
 }
 
-.footer__cta {
-  margin-bottom: -8rem;
-}
-.footer__cta__row {
-  position: relative;
-  grid-template-columns: repeat(2, 1fr);
-}
-.footer__cta__row::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 11.6rem;
-  content: "";
-  background: var(--clr-light-blue-500);
-  transform: translateY(-50%);
-  z-index: 0;
-}
-.footer__cta__row__card {
-  z-index: 1;
-}
-.footer__cta__row__card a {
-  font-size: 1.5rem;
-}
-.footer__cta__row__card a:hover {
-  color: var(--clr-blue-500);
-}
-.footer__content {
-  padding: 14.8rem 0 8rem 0;
-  background-image: url("../images/background-footer.png");
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
-}
-.footer__content__row {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  font-size: 1.4rem;
-}
-.footer__content__row__card:nth-child(1) i {
-  font-size: 2rem;
-}
-.footer__content__row__card:nth-child(2) ul {
+.footer__copyright__row {
   display: flex;
-  flex-direction: column;
-  gap: var(--fs-200);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--fs-100);
 }
-.footer__content__row__card:nth-child(2) ul li a {
-  color: var(--clr-white-500);
-  transition: color 300ms ease-in-out;
+.footer__copyright__row p {
+  text-align: center;
 }
-.footer__content__row__card:nth-child(2) ul li a:hover {
-  color: var(--clr-primary-500);
-  transition: color 300ms ease-in-out;
-}
-.footer__copyright {
-  font-size: 1.5rem;
-  line-height: 1.1 !important;
+.footer__copyright__row ul {
+  display: flex;
+  gap: var(--gap);
+  font-size: 2rem;
 }
 .footer__developer__row {
   font-size: 1.5rem;
   line-height: 1.1 !important;
 }
+.footer__developer__row__validator a {
+  display: flex;
+  align-items: end;
+}
 .footer__developer__row a:hover {
-  color: #036d68;
+  color: #013c39;
 }
 .footer__developer__row a i {
+  line-height: 1 !important;
   margin-right: 4px;
 }
 @media only screen and (max-width: 576px) {
-  .footer__cta {
-    display: none;
-  }
-  .footer__content {
-    padding: var(--fs-600) 0;
-  }
   .footer__developer__row {
     gap: var(--fs-100);
   }
@@ -3037,6 +2993,41 @@ img.mfp-img {
   .gallery__row__card:nth-child(8) {
     grid-column: 2/4;
   }
+}
+
+.map {
+  width: 100%;
+  height: 40rem;
+}
+.map iframe {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .map {
+    height: 30rem;
+  }
+}
+
+.contact__row__card {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+.contact__row__card__icon {
+  max-width: 8rem;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.contact__row__card__body {
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

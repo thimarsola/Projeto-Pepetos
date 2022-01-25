@@ -36,4 +36,12 @@
 <?php get_template_part('template-parts/home/home', 'gallery'); ?>
 <!-- end of gallery -->
 
+<!-- map -->
+<?php get_template_part('template-parts/home/home', 'map'); ?>
+<!-- end of map -->
+
+<!-- contact -->
+<?php get_template_part('template-parts/home/home', 'contact'); ?>
+<!-- end of contact -->
+
 <?php get_footer(); ?>
