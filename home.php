@@ -32,4 +32,8 @@
 <?php get_template_part('template-parts/home/home', 'cta'); ?>
 <!-- end of cta -->
 
+<!-- gallery -->
+<?php get_template_part('template-parts/home/home', 'gallery'); ?>
+<!-- end of gallery -->
+
 <?php get_footer(); ?>
