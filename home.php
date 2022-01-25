@@ -28,4 +28,8 @@
 <?php get_template_part('template-parts/home/home', 'veterinary'); ?>
 <!-- end of veterinary -->
 
+<!-- cta -->
+<?php get_template_part('template-parts/home/home', 'cta'); ?>
+<!-- end of cta -->
+
 <?php get_footer(); ?>

@@ -26,7 +26,7 @@ $(function () {
       autoplay: true,
       autoplayTimeout: 4000,
       autoplayHoverPause: true,
-      autoHeight:true,
+      autoHeight:false,
       responsive: {
          0: {
             items: 1,
