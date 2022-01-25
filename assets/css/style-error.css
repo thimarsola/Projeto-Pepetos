@@ -8,6 +8,7 @@
   --clr-neutral-500: #434343;
   --clr-white-500: #fff;
   --clr-whatsapp-500: #2CD366;
+  --clr-light-gray-500: #F8F8F8;
   --clr-light-blue-500: #BEEAF8;
   --clr-dark-blue-500: #000438;
   --clr-green-500: #77fd86;
@@ -274,6 +275,10 @@ body {
   background-color: var(--clr-whatsapp-500) !important;
 }
 
+.bg-light-gray-500 {
+  background-color: var(--clr-light-gray-500) !important;
+}
+
 .bg-light-blue-500 {
   background-color: var(--clr-light-blue-500) !important;
 }
@@ -300,6 +305,10 @@ body {
 
 .clr-whatsapp-500 {
   color: var(--clr-whatsapp-500) !important;
+}
+
+.clr-light-gray-500 {
+  color: var(--clr-light-gray-500) !important;
 }
 
 .clr-light-blue-500 {
@@ -1155,6 +1164,17 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+.btn-light-gray-500 {
+  background-color: #F8F8F8;
+  color: var(--clr-dark-blue-500);
+  transition: all 300ms ease-in-out;
+}
+.btn-light-gray-500:hover {
+  color: var(--clr-white-500);
+  background-color: #dfdfdf;
+  transition: all 300ms ease-in-out;
+}
+
 .btn-light-blue-500 {
   background-color: #BEEAF8;
   color: var(--clr-dark-blue-500);
@@ -1221,6 +1241,15 @@ body {
 }
 .link-whatsapp-500:hover, .link-whatsapp-500:focus {
   color: #23a952;
+  transition: all 300ms ease-in-out;
+}
+
+.link-light-gray-500 {
+  color: #F8F8F8;
+  transition: all 300ms ease-in-out;
+}
+.link-light-gray-500:hover, .link-light-gray-500:focus {
+  color: #dfdfdf;
   transition: all 300ms ease-in-out;
 }
 

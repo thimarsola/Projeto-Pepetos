@@ -1,0 +1,40 @@
+{
+  "testimonial": [
+    {
+      "image": "imagem-shopie",
+      "description": "A Sophie frequenta a creche 3 vezes por semana e quando viajamos ela fica hospedada na creche. Este é o melhor investimento que fizemos por ela, sinto que ela realmente frequenta uma escola e quando hospedamos um acampamento com seus amigos. Vale cada centavo investido. A equipe é sensacional, muito profissional e carinhosa.",
+      "author": "Felipe Pelá",
+      "since": "Pai da Sophie (aluna da creche desde 2019)"
+    },
+    {
+      "image": "imagem-cindy",
+      "description":  "Tudo me agrada no Pepetos, segurança, profissionais amorosos, custo-benefício, higiene...ainda eles têm piscina e um pequeno lago para brincadeiras...tem caça ao petisco, musicoterapia, estimulam paladar e olfato com atividades lúdicas ... minha Bernese e eu somos fãs...SUPER RECOMENDO",
+      "author": "Ane Morales",
+      "since": "Mãe da Cindy (aluna da creche desde 2019) "
+    },
+    {
+      "image": "imagem-lolla",
+      "description": "Lola ama a Pepetos e as atividades da crechinha. Também ja utilizamos o serviço de hotel (por uma semana) e foi super tranquilo. Eles sempre nos atualizam com fotos, vídeos e noticias dos peludos. Ótimo para socialização e gasto de energia.",
+      "author": "Marcelo Marques",
+      "since": "Pai da Lolla (aluna da creche desde 2020)"
+    },
+    {
+      "image": "imagem-vicky",
+      "description": "Profissionais atenciosos, sempre preocupados com o serviço oferecido… Sempre me preocupei muito em escolher um lugar em que eu pudesse confiar e deixar meus pequenos… A Pepetos foi a melhor escolha! Meus pequenos amam e chegam em casa felizes (e cansados… rsrs) com o dia cheio de atividades e cuidados :)",
+      "author": "Bruna Nakauchi",
+      "since": "mãe do Freddy e Vicky (alunos da creche desde 2021)"
+    },
+    {
+      "image": "imagem-sol",
+      "description": "Excelente, deixamos nossa Sol na creche e hotel ha mais de um ano, ela adora e nos ficamos tranquilas pq eles tem o maior carinho, atenção, profissionalismo e segurança.",
+      "author": "Virginia Lettiere",
+      "since": "Mãe da Sol (aluna da creche desde 2020)"
+    },
+    {
+      "image": "imagem-dollynho",
+      "description": "Hospedei minha cachorra Esmeralda e gostei muito do atendimento. Ela sofreu maus tratos e é muito medrosa! Mas a Patrícia e o Diego foram extremamente cuidadosos e atenciosos! Ela ficou super bem! Eu recomendo!",
+      "author": "Sandra Pezotti",
+      "since": "Mãe da Esmeralda e do Dollynho (hóspedes desde 2019)"
+    }
+  ]
+}

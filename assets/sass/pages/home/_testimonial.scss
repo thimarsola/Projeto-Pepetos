@@ -1,0 +1,144 @@
+@use "../../abstracts" as *;
+
+.testimonial{
+   position: relative;
+
+   &::before{
+      position: absolute;
+      top: -10rem;
+      left: 0;
+      width: 10rem;
+      height: 20rem;
+      content: '';
+      background:{
+         image: url("../svg/vertor-circulo-servicos.svg");
+         size: contain;
+         repeat: no-repeat;
+      }
+   }
+
+   &__content{
+      margin: 0 auto;
+      max-width: 73rem;
+      width: 100%;
+
+      &__card{
+         position: relative;
+         padding: 3rem;
+
+         &__image{
+            position: absolute;
+            top: 0;
+            left: 1.5rem;
+            max-width: 12rem;
+            max-height: 12rem;
+            width: 100%;
+            height: 100%;
+            box-shadow: -15px 15px 0 var(--clr-primary-500);
+            border-radius: var(--fs-100);
+            z-index: 2;
+            
+            img{
+               border-radius: var(--fs-100);
+            }
+         }
+         
+         &__body{
+            max-width: calc(100% - 5rem - 1.5rem);
+            width: 100%;
+            margin-left: auto;
+            position: relative;
+            padding: 4.8rem 3rem 4.8rem 10rem;
+            box-shadow: 0 0 30px rgba(#000, .15);
+            
+            p{
+               &:first-child{
+                  font-size: 1.4rem;
+               }
+            }
+            
+            &__title{
+               display: flex;
+               justify-content: flex-start;
+               align-items: center;
+               
+               span{
+                  display: block;
+                  width: var(--fs-300);
+                  height: 4px;
+                  margin-right: var(--fs-100);
+                  background: var(--clr-green-500);
+               }
+            }
+            
+            i{
+               position: absolute;
+               bottom: 3rem;
+               right: 3rem;
+            }
+         }
+      }
+   }
+
+   .owl-dots {
+      text-align: center;
+      //margin-top: var(--fs-400);
+   }
+
+   .owl-dot {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background: var(--clr-neutral-500) !important;
+      margin: 0 var(--fs-100);
+      @include transition(background);
+
+      &:hover{
+         background: var(--clr-green-500) !important;
+         @include transition(background);
+      }
+
+      &.active {
+         width: 3rem;
+         background: var(--clr-green-500) !important;
+         @include transition(background);
+      }
+   }
+   
+   //breakpoint mobile
+   @include mq(sm){
+      &__content{
+         &__card{
+            &__image{
+               left: 2rem;
+            }
+
+            &__body{
+               max-width: 100%;
+               margin-left: initial;
+               padding: 14rem 3rem 3rem 3rem;
+               
+               p{
+                  &:first-child{
+                     font-size: 12px;
+                  }
+               }
+
+               &__title{
+                  font-size: 14px;
+               }
+
+               i{
+                  position: absolute;
+                  bottom: initial;
+                  top: 3rem;
+                  right: 3rem;
+               }
+            }
+         }
+      }
+   }
+}

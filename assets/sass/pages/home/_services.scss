@@ -1,22 +1,6 @@
 @use "../../abstracts" as *;
 
 .services{
-  position: relative;
-
-  &::before{
-    position: absolute;
-    bottom: -10rem;
-    left: 0;
-    width: 10rem;
-    height: 20rem;
-    content: '';
-    background:{
-      image: url("../svg/vertor-circulo-servicos.svg");
-      size: contain;
-      repeat: no-repeat;
-    }
-  }
-
   &__row{
     &__card{
       display: flex;

@@ -15,9 +15,13 @@
 <!-- differentials -->
 <?php get_template_part('template-parts/home/home', 'differentials'); ?>
 <!-- end of differentials -->
-
+<!---->
 <!-- services -->
 <?php get_template_part('template-parts/home/home', 'services'); ?>
 <!-- end of services -->
+
+<!-- testimonial -->
+<?php get_template_part('template-parts/home/home', 'testimonial'); ?>
+<!-- end of testimonial -->
 
 <?php get_footer(); ?>

@@ -1,6 +1,4 @@
 $(function () {
-    var $win = $(window);
-
     $(".differentials__content__row").owlCarousel({
         rtl:true,
         loop: true,
@@ -20,4 +18,25 @@ $(function () {
             }
         }
     });
+
+   $(".testimonial__content").owlCarousel({
+      loop: true,
+      margin: 100,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      autoHeight:true,
+      responsive: {
+         0: {
+            items: 1,
+         },
+         600: {
+            items: 1,
+         },
+         1000: {
+            items: 1,
+         }
+      }
+   });
 });
