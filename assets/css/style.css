@@ -2370,11 +2370,6 @@ img.mfp-img {
   background-size: cover;
   background-position: right top;
 }
-@supports (background-image: -webkit-image-set(url("../images/background-hero.webp") 1x)) {
-  .hero {
-    background-image: -webkit-image-set(url("../images/background-hero.webp") 1x);
-  }
-}
 .hero::before {
   position: absolute;
   top: 0;
@@ -2414,20 +2409,10 @@ img.mfp-img {
   .hero {
     background-image: url("../images/background-hero-medium.png");
   }
-  @supports (background-image: -webkit-image-set(url("../images/background-hero-medium.webp") 1x)) {
-    .hero {
-      background-image: -webkit-image-set(url("../images/background-hero-medium.webp") 1x);
-    }
-  }
 }
 @media only screen and (max-width: 768px) {
   .hero {
     background-image: url("../images/background-hero-tablet.png");
-  }
-  @supports (background-image: -webkit-image-set(url("../images/background-hero-tablet.webp") 1x)) {
-    .hero {
-      background-image: -webkit-image-set(url("../images/background-hero-tablet.webp") 1x);
-    }
   }
   .hero__content__header h2 {
     font-size: var(--fs-900);
@@ -2436,11 +2421,8 @@ img.mfp-img {
 @media only screen and (max-width: 576px) {
   .hero {
     background-image: url("../images/background-hero-mobile.png");
-  }
-  @supports (background-image: -webkit-image-set(url("../images/background-hero-mobile.webp") 1x)) {
-    .hero {
-      background-image: -webkit-image-set(url("../images/background-hero-mobile.webp") 1x);
-    }
+    background-size: cover;
+    background-position: top right;
   }
   .hero::before {
     display: none;

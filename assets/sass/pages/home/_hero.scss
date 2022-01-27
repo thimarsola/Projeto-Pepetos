@@ -76,7 +76,12 @@
 
    //breakpoint mobile
    @include mq(sm){
-      background-image: url("../images/background-hero-mobile.png");
+      background:{
+         image: url("../images/background-hero-mobile.png");
+         size: cover;
+         position: top right;
+      }
+      
       &::before{
          display: none;
       }
