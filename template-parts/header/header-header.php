@@ -7,7 +7,7 @@
              <!-- brand -->
               <div class="header__content__brand">
                   <a href="<?= (is_home() ? '#home' : get_home_url()); ?>" title="<?= SITE["name"]; ?>">
-                      <img src="<?= image('logo-topo.svg', 'svg'); ?>" alt="Logo Pepetos">
+                      <img src="<?= image('logo-topo.svg', 'svg'); ?>" alt="Logo Pepetos" title="Pepetos" loading="lazy">
                   </a>
               </div>
              <!-- end of brand -->

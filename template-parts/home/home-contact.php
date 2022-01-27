@@ -8,7 +8,7 @@
       
       <!-- brand -->
       <div class="contact__brand d-flex ai-center jc-center mb-5">
-         <img src="<?= image('logo-rodape.svg', 'svg'); ?>" alt="Logo Pepetos">
+         <img src="<?= image('logo-rodape.svg', 'svg'); ?>" alt="Logo Pepetos" title="Pepetos" loading="lazy">
       </div>
       <!-- end of brand -->
 

@@ -13,12 +13,14 @@
               <ul>
                  <li>
                     <a rel="nofollow noreferrer noopener" href="<?= CONTACT['facebook']; ?>" target="_blank" title="Siga a Pepetos no Facebook!" class="link-dark-blue-500">
+                       <span class="d-none">Facebook</span>
                        <i class="icon-facebook"></i>
                     </a>
                  </li>
                  
                  <li>
                     <a rel="nofollow noreferrer noopener" href="<?= CONTACT['instagram']; ?>" target="_blank" title="Siga a Pepetos no Instagram!" class="link-dark-blue-500">
+                       <span class="d-none">Instagram</span>
                        <i class="icon-instagram"></i>
                     </a>
                  </li>
