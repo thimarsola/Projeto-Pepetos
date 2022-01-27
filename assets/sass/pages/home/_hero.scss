@@ -8,8 +8,9 @@
    align-items: center;
    background:{
       image: url('../images/background-hero.png');
-      size: cover;
+      size: contain;
       position: right top;
+      repeat: no-repeat;
    }
 
    &::before{
@@ -76,11 +77,7 @@
 
    //breakpoint mobile
    @include mq(sm){
-      background:{
-         image: url("../images/background-hero-mobile.png");
-         size: cover;
-         position: top right;
-      }
+      background-image: url("../images/background-hero-mobile.png");
       
       &::before{
          display: none;

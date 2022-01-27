@@ -2367,8 +2367,9 @@ img.mfp-img {
   display: flex;
   align-items: center;
   background-image: url("../images/background-hero.png");
-  background-size: cover;
+  background-size: contain;
   background-position: right top;
+  background-repeat: no-repeat;
 }
 .hero::before {
   position: absolute;
@@ -2421,8 +2422,6 @@ img.mfp-img {
 @media only screen and (max-width: 576px) {
   .hero {
     background-image: url("../images/background-hero-mobile.png");
-    background-size: cover;
-    background-position: top right;
   }
   .hero::before {
     display: none;
