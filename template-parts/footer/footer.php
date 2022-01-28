@@ -1,6 +1,6 @@
 <footer class="footer">
    <!-- copyright -->
-    <div class="footer__copyright bg-light-gray-500 py-1">
+    <div class="footer__copyright bg-light-gray-500 py-2">
        <div class="container">
           <!-- row -->
            <div class="footer__copyright__row l-small">

@@ -1,4 +1,5 @@
 $(function () {
+   //Differentials 1
    $(".differentials__content__row").owlCarousel({
       rtl:true,
       loop: true,
@@ -17,6 +18,25 @@ $(function () {
          }
       }
    });
+   
+   //Differentials 2
+   // $(".differentials__content__row").owlCarousel({
+   //    loop: true,
+   //    margin: 30,
+   //    nav: true,
+   //    autoHeight: true,
+   //    responsive: {
+   //       0: {
+   //          items: 1,
+   //       },
+   //       600: {
+   //          items: 2,
+   //       },
+   //       1000: {
+   //          items: 3,
+   //       }
+   //    }
+   // });
 
    $(".testimonial__content").owlCarousel({
       loop: true,
